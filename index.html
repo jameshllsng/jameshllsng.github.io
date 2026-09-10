@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Luís Miguel - Desenvolvedor e Designer</title>
-  <meta name="description" content="Desenvolvedor Full Stack & UX/UI Designer Localizado em São Paulo">
+  <meta name="description" content="Portfólio de Luís Miguel, desenvolvedor Full Stack e Designer.">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
 
@@ -16,9 +16,12 @@
 
 <body>
   <header class="header">
-    <img src="/img/marca.svg" alt="Luís 'James' Miguel" width="104" height="38">
-    <nav>
+    <a href="#inicio" aria-label="Ir para o início">
+      <img src="img/marca.svg" alt="Luís 'James' Miguel" width="104" height="38">
+    </a>
+    <nav aria-label="Navegação principal">
       <ul class="header-menu">
+        <li><a href="#projetos">Projetos</a></li>
         <li><a href="#experiencia">Experiência</a></li>
         <li><a href="#formacao">Formação</a></li>
         <li><a href="#contato">Contato</a></li>
@@ -26,124 +29,184 @@
     </nav>
   </header>
 
-  <main class="introducao">
-    <img src="img/perfil.png" alt="Primata de Pelos Cinza" width="360" height="520">
-    <div>
-      <h1>Desenvolvedor <br>Full Stack & <br>UX/UI Designer</h1>
-      <p>Localizado em São Paulo 🏢</p>
-    </div>
-  </main>
-</body>
+  <main>
+    <section class="introducao" id="inicio" aria-label="Apresentação">
+      <img src="img/perfil.png" alt="Ilustração de perfil de Luís Miguel" width="360" height="520">
+      <div>
+        <h1>Desenvolvedor <br>Full Stack & <br>Designer</h1>
+        <p>Localizado em São Paulo 🏢</p>
+      </div>
+    </section>
 
-<section class="experiencia" id="experiencia" aria-label="Experiência">
-  <h1 class="subtitulo">Experiência</h1>
-  <div>
-    <p class="experiencia-texto">
-      Trabalho com <strong>administração de redes</strong>, <strong>servidores</strong> <strong>Windows</strong> e <strong>Linux</strong> e suporte técnico de nível 2 na FACERES, atuando em <strong>segurança da informação</strong>, <strong>infraestrutura</strong> e manutenção de estações de trabalho.
-    </p>
-    <div class="empresa">
-      <span class="empresa-ano">2024-o momento</span>
-      <h3 class="empresa-titulo">FACERES</h3>
-      <span class="empresa-titulo">Assistente de TI</span>
-      <p class="empresa-texto">Administração de redes LAN/Wi‑Fi, configuração de equipamentos e aplicação de
-        práticas de segurança da informação para garantir a disponibilidade dos serviços.<br><br>Gestão de sistemas e servidores, com foco em Windows e Linux, atualização de
-        serviços, análise de logs e suporte à estabilidade da infraestrutura.<br><br>Suporte técnico de nível 2 a usuários internos, troubleshooting avançado, registro
-        de ocorrências e padronização de procedimentos de TI.</p>
-      <ul class="empresa-habilidades">
-        <li>Redes LAN/Wi‑Fi</li>
-        <li>Windows Server</li>
-        <li>Linux</li>
-        <li>Segurança da Informação</li>
-        <li>Suporte N2</li>
-        <li>Troubleshooting</li>
-        <li>GLPI</li>
-        <li>n8n</li>
-        <li>Python</li>
-        <li>Java/Spring Boot</li>
-        <li>SQL</li>
-      </ul>
-    </div>
+    <section class="projetos" id="projetos" aria-labelledby="projetos-titulo">
+      <h2 class="subtitulo" id="projetos-titulo">Projetos</h2>
+      <div>
+        <p class="projetos-texto">
+          Alguns projetos que desenvolvi para colocar em prática conhecimentos de <strong>back-end</strong>,
+          <strong>front-end</strong> e integração entre sistemas.
+        </p>
 
-    <div class="empresa">
-      <span class="empresa-ano">2022-24</span>
-      <h3 class="empresa-titulo">FACERES</h3>
-      <span class="empresa-titulo">Auxiliar de TI</span>
-      <p class="empresa-texto">Administração de Active Directory, com criação, ajuste e controle de contas,
-        grupos e permissões de acesso.<br><br> Atuação em infraestrutura de rede e CFTV, incluindo configuração básica de
-        switches/roteadores e apoio em cabeamento estruturado.<br><br> Manutenção de estações de trabalho, com diagnóstico de falhas, substituição de
-        componentes, formatação e instalação de sistemas e softwares corporativos.</p>
-      <ul class="empresa-habilidades">
-        <li>Active Directory</li>
-        <li>CFTV</li>
-        <li>Switches/Roteadores</li>
-        <li>Cabeamento Estruturado</li>
-        <li>Manutenção de Hardware</li>
-        <li>Formatação e Implantação de Software</li>
-      </ul>
-    </div>
-  </div>
-</section>
+        <article class="projeto">
+          <div class="projeto-conteudo">
+            <span class="projeto-tipo">Aplicação web</span>
+            <h3 class="projeto-titulo">JamTask</h3>
+            <p class="projeto-texto">Sistema para gerenciamento de tarefas com autenticação e operações completas de cadastro, consulta, edição e exclusão.</p>
+            <a class="projeto-link" href="https://github.com/jameshllsng/JamTask" target="_blank" rel="noopener noreferrer">Ver no GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <ul class="projeto-habilidades" aria-label="Tecnologias utilizadas no JamTask">
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>PostgreSQL</li>
+            <li>Spring Security</li>
+            <li>Thymeleaf</li>
+          </ul>
+        </article>
 
-<section class="formacao" id="formacao" aria-label="Formação">
-  <div class="formacao-container">
-    <h2 class="subtitulo">Formação</h2>
-    <div>
-      <p class="formacao-texto">
-        Minha mais recente experiência acadêmica é o <strong>tecnólogo</strong> que estou fazendo em <strong>ADS</strong>.
-        Além disso me mantenho sempre atualizado com cursos intensivos online.
-      </p>
-      <ul class="faculdade-lista">
-        <li class="faculdade">
-          <span class="faculdade-tipo">Tecnólogo</span>
-          <h3 class="faculdade-curso">Análise e Desenvolvimento de Sistemas</h3>
-          <span class="faculdade-instituicao">Uninter</span>
-        </li>
-        <li class="faculdade">
-          <span class="faculdade-tipo">Técnico</span>
-          <h3 class="faculdade-curso">Informática</h3>
-          <span class="faculdade-instituicao">Senac</span>
-        </li>
-        <li class="faculdade">
-          <span class="faculdade-tipo">Técnico</span>
-          <h3 class="faculdade-curso">Análise e Desenvolvimento de Sistemas</h3>
-          <span class="faculdade-instituicao">ETEC Philadelpho Gouvêa Netto</span>
-        </li>
-      </ul>
-      <div class="formacao-extra">
-        <div class="cursos">
-          <h3>Cursos Intensivos</h3>
-          <ul>
-            <li>Lógica de Programação e Algoritmos <span>31h</span></li>
-            <li>UX / UI Design e Desenvolvimento Front End <span>280h</span></li>
-            <li>Densenvolvimento Web (Full Stack) <span>120h</span></li>
-            <li>Git e GitHub <span>10h</span></li>
+        <article class="projeto">
+          <div class="projeto-conteudo">
+            <span class="projeto-tipo">Ferramenta web</span>
+            <h3 class="projeto-titulo">Scanner de Patrimônio</h3>
+            <p class="projeto-texto">Leitor de códigos Data Matrix e QR Code pela câmera, com envio dos dados para uma planilha Google.</p>
+            <a class="projeto-link" href="https://github.com/jameshllsng/ScannerIMEI" target="_blank" rel="noopener noreferrer">Ver no GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <ul class="projeto-habilidades" aria-label="Tecnologias utilizadas no Scanner de Patrimônio">
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Google Apps Script</li>
+            <li>Google Sheets</li>
+          </ul>
+        </article>
+
+        <article class="projeto">
+          <div class="projeto-conteudo">
+            <span class="projeto-tipo">Jogo 2D</span>
+            <h3 class="projeto-titulo">STALKXEL</h3>
+            <p class="projeto-texto">Jogo de plataforma em pixel art inspirado em S.T.A.L.K.E.R., com sistema de pontuação e ranking dos jogadores.</p>
+            <a class="projeto-link" href="https://github.com/jameshllsng/STALKXEL" target="_blank" rel="noopener noreferrer">Ver no GitHub <span aria-hidden="true">↗</span></a>
+          </div>
+          <ul class="projeto-habilidades" aria-label="Tecnologias utilizadas no STALKXEL">
+            <li>Python</li>
+            <li>Pygame</li>
+            <li>SQLite</li>
+            <li>Pixel Art</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="experiencia" id="experiencia" aria-labelledby="experiencia-titulo">
+      <h2 class="subtitulo" id="experiencia-titulo">Experiência</h2>
+      <div>
+        <p class="experiencia-texto">
+          Trabalho com <strong>administração de redes</strong>, <strong>servidores</strong> <strong>Windows</strong> e <strong>Linux</strong> e suporte técnico de nível 2 na FACERES, atuando em <strong>segurança da informação</strong>, <strong>infraestrutura</strong> e manutenção de estações de trabalho.
+        </p>
+        <div class="empresa">
+          <span class="empresa-ano">2024-atual</span>
+          <h3 class="empresa-titulo">FACERES</h3>
+          <span class="empresa-titulo">Assistente de TI</span>
+          <p class="empresa-texto">Administração de redes LAN/Wi‑Fi, configuração de equipamentos e aplicação de
+            práticas de segurança da informação para garantir a disponibilidade dos serviços.<br><br>Gestão de sistemas e servidores, com foco em Windows e Linux, atualização de
+            serviços, análise de logs e suporte à estabilidade da infraestrutura.<br><br>Suporte técnico de nível 2 a usuários internos, troubleshooting avançado, registro
+            de ocorrências e padronização de procedimentos de TI.</p>
+          <ul class="empresa-habilidades">
+            <li>Redes LAN/Wi‑Fi</li>
+            <li>Windows Server</li>
+            <li>Linux</li>
+            <li>Segurança da Informação</li>
+            <li>Suporte N2</li>
+            <li>Troubleshooting</li>
+            <li>GLPI</li>
+            <li>n8n</li>
+            <li>Python</li>
+            <li>Java/Spring Boot</li>
+            <li>SQL</li>
           </ul>
         </div>
-        <div class="idiomas">
-          <h3>Idiomas</h3>
-          <ul>
-            <li>Inglês <span>/ Avançado</span></li>
-            <li>Russo <span>/ Básico</span></li>
-            <li>Espanhol <span>/ Iniciante</span></li>
+
+        <div class="empresa">
+          <span class="empresa-ano">2022-24</span>
+          <h3 class="empresa-titulo">FACERES</h3>
+          <span class="empresa-titulo">Auxiliar de TI</span>
+          <p class="empresa-texto">Administração de Active Directory, com criação, ajuste e controle de contas,
+            grupos e permissões de acesso.<br><br> Atuação em infraestrutura de rede e CFTV, incluindo configuração básica de
+            switches/roteadores e apoio em cabeamento estruturado.<br><br> Manutenção de estações de trabalho, com diagnóstico de falhas, substituição de
+            componentes, formatação e instalação de sistemas e softwares corporativos.</p>
+          <ul class="empresa-habilidades">
+            <li>Active Directory</li>
+            <li>CFTV</li>
+            <li>Switches/Roteadores</li>
+            <li>Cabeamento Estruturado</li>
+            <li>Manutenção de Hardware</li>
+            <li>Formatação e Implantação de Software</li>
           </ul>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<footer class="footer" id="contato">
-  <div class="footer-container">
-    <p class="footer-texto">
-      Disponível para novas oportunidades em TI. Me envie uma mensagem e conversamos sobre o seu projeto. 👋
-    </p>
-    <ul class="footer-contato">
-      <li>luis.miguelsandrincardoso@gmail.com</li>
-      <li>+55 (17) 99255-2421</li>
-      <li><a href="/">@james_hllsng</a></li>
-    </ul>
-    <p class="footer-copy">Luís "James" Miguel - Desenvolvedor e Designer | Alguns direitos reservados.</p>
-  </div>
-</footer>
+    <section class="formacao" id="formacao" aria-labelledby="formacao-titulo">
+      <div class="formacao-container">
+        <h2 class="subtitulo" id="formacao-titulo">Formação</h2>
+        <div>
+          <p class="formacao-texto">
+            Minha mais recente experiência acadêmica é o <strong>tecnólogo</strong> que estou fazendo em <strong>ADS</strong>.
+            Além disso me mantenho sempre atualizado com cursos intensivos online.
+          </p>
+          <ul class="faculdade-lista">
+            <li class="faculdade">
+              <span class="faculdade-tipo">Tecnólogo</span>
+              <h3 class="faculdade-curso">Análise e Desenvolvimento de Sistemas</h3>
+              <span class="faculdade-instituicao">Uninter</span>
+            </li>
+            <li class="faculdade">
+              <span class="faculdade-tipo">Técnico</span>
+              <h3 class="faculdade-curso">Informática</h3>
+              <span class="faculdade-instituicao">Senac</span>
+            </li>
+            <li class="faculdade">
+              <span class="faculdade-tipo">Técnico</span>
+              <h3 class="faculdade-curso">Análise e Desenvolvimento de Sistemas</h3>
+              <span class="faculdade-instituicao">ETEC Philadelpho Gouvêa Netto</span>
+            </li>
+          </ul>
+          <div class="formacao-extra">
+            <div class="cursos">
+              <h3>Cursos Intensivos</h3>
+              <ul>
+                <li>Lógica de Programação e Algoritmos <span>31h</span></li>
+                <li>UX / UI Design e Desenvolvimento Front End <span>280h</span></li>
+                <li>Desenvolvimento Web (Full Stack) <span>120h</span></li>
+                <li>Java / Spring Boot <span>42h</span></li>
+                <li>Git e GitHub <span>10h</span></li>
+              </ul>
+            </div>
+            <div class="idiomas">
+              <h3>Idiomas</h3>
+              <ul>
+                <li>Inglês <span>/ Avançado</span></li>
+                <li>Russo <span>/ Básico</span></li>
+                <li>Espanhol <span>/ Iniciante</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contato">
+    <div class="footer-container">
+      <p class="footer-texto">
+        Disponível para novas oportunidades em TI. Me envie uma mensagem e conversamos sobre o seu projeto. 👋
+      </p>
+      <ul class="footer-contato">
+        <li><a href="mailto:luis.miguelsandrincardoso@gmail.com">luis.miguelsandrincardoso@gmail.com</a></li>
+        <li><a href="tel:+5517992552421">+55 (17) 99255-2421</a></li>
+        <li><a href="https://github.com/jameshllsng" target="_blank" rel="noopener noreferrer">@jameshllsng</a></li>
+      </ul>
+      <p class="footer-copy">Luís "James" Miguel - Desenvolvedor e Designer | Alguns direitos reservados.</p>
+    </div>
+  </footer>
+</body>
 
 </html>
